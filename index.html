@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile Ardi</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    padding: 25px;
+    text-align: center;
+    background: #080808;
+    border-radius: 20px;
+    box-shadow: 0 0 25px purple;
+    border: 2px solid #6a0dad;
+}
+
+h1 {
+    color: #b44cff;
+}
+
+p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.username {
+    background: #151515;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 15px;
+    color: #c77dff;
+    cursor: pointer;
+}
+
+button {
+    background: #8000ff;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a020f0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Selamat Datang</h1>
+
+    <p>
+    Di Profile Aku 👋<br><br>
+    Mau bantuan mendapatkan <b>Paku & Koin</b> 
+    di Violence District?<br>
+    Add aku sekarang!
+    </p>
+
+    <div class="username" onclick="copyName()">
+        Roblox: <b>ardi90087</b><br>
+        (Klik untuk salin)
+    </div>
+
+    <button onclick="pindah()">Add Now</button>
+</div>
+
+<script>
+function copyName(){
+    navigator.clipboard.writeText("ardi90087");
+    alert("Nama Roblox berhasil disalin!");
+}
+
+function pindah(){
+    window.location.href="halaman2.html";
+}
+</script>
+
+</body>
+</html>
